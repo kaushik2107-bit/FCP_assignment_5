@@ -2,6 +2,7 @@
 
 int main() {
   int n, i, j, k;
+  printf("Enter the size of the array followed by the aray:\n");
   scanf("%d", &n);
   int arr[n];
   for (i = 0; i<n; ++i) {
@@ -21,5 +22,6 @@ int main() {
   for (i = 0; i<n; ++i) {
     printf("%d ", arr[i]);
   }
+  printf("\n");
 
 }

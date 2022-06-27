@@ -3,6 +3,7 @@
 
 int main() {
   int n, i, j, min = INT_MAX, max = INT_MIN ;
+  printf("Enter the size of the array:\n");
   scanf("%d", &n);
   int arr[n];
 
@@ -24,7 +25,7 @@ int main() {
   for (i=0; i<n; ++i) {
     printf("%d ", arr[i]);
   }
-
+  printf("\n");
 
 
 

@@ -2,11 +2,13 @@
 
 int  main() {
 	int m,n,i,j;
+	printf("Enter the size of the array1 followed by elements:\n");
 	scanf("%d", &m);
 	int arr0[m];
 	for (i=0; i<m; ++i) {
 	scanf("%d", &arr0[i]);
 	}
+	printf("Enter the size of the array2 followed by elements:\n");
 	scanf("%d", &n);
 	int arr1[n];
 	for (i=0; i<n; ++i) {
@@ -43,19 +45,22 @@ int  main() {
 			}
 		} else if (m==0 && n!=0) {
 			for (j=0; j<n; ++j) {
-				arr[i] = arr1[j];
+				arr[i+j] = arr1[j];
 			}
+			break;
 		} else if (m!=0 && n==0) {
 			for (j=0; j<m; ++j) {
-				arr[i] = arr0[j];
+				arr[i+j] = arr0[j];
 			}
+			break;
 		}
 	}
-	
+
 	for (i=0; i<d; ++i) {
 		printf("%d ", arr[i]);
 	}
-	
+	printf("\n");
+
 	return 0;
 
 

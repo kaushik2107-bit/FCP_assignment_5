@@ -2,6 +2,7 @@
 
 int main() {
   int n, i, j, k, odd=0, even=0;
+  printf("Enter the size of the array:\n");
   scanf("%d", &n);
 
   int arr[n];
